@@ -28,7 +28,7 @@ There are three parts to the code. One deals with creation of the files, the sec
 
 - readCurrentBlock(SM_FileHandle * fHandle, SM_PageHandle memPage) : Reads the block from the file where the curPagePos is.
 
-- readNextBlock(SM_FileHandle * fHandle, SM_PageHandle memPage) : Reads the previous block with respect to the curPagePos.
+- readNextBlock(SM_FileHandle * fHandle, SM_PageHandle memPage) : Reads the next block with respect to the curPagePos.
 
 - readLastBlock(SM_FileHandle * fHandle, SM_PageHandle memPage) : Reads the content of last block in the page file.
 
