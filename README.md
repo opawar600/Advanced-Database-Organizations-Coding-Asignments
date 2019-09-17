@@ -34,7 +34,10 @@ There are three parts to the code. One deals with creation of the files, the sec
 
 ## Writing to a file
 
-- writeBlock()
-- writeCurrentBlock()
-- appendEmptyBlock()
-- ensureCapacity()
+- writeBlock(int pageNum, SM_FileHandle * fHandle, SM_PageHandle memPage) : Writes a page and stores the contents in the memory location pointed by memPage in the memory.
+
+- writeCurrentBlock(SM_FileHandle * fHandle, SM_PageHandle memPage) : Writes the content where the current position of page is.
+
+- appendEmptyBlock(SM_FileHandle * fHandle) : This function will append one page of zero bytes.
+
+- ensureCapacity(int numberOfPages, SM_FileHandle * fHandle) : If the file does not have enough number of pages then this function can be used to increase the total number of pages.
