@@ -1,4 +1,4 @@
-# Advanced-Database-Organizations-Coding-Asignments
+# Advanced-Database-Organizations-Coding-Assignments
 
 In this assignment, we implement a storage manager which can read and write blocks from a given file to the disk and also to the memory.
 
